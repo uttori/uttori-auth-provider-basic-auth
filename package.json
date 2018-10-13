@@ -1,0 +1,54 @@
+{
+  "name": "uttori-auth-provider-basic-auth",
+  "version": "1.0.0",
+  "description": "Uttori auth provider using basic-auth.",
+  "author": "Matthew Callis <matthew.callis@gmail.com>",
+  "contributors": [],
+  "license": "MIT",
+  "repository": "uttori/uttori-auth-provider-basic-auth",
+  "homepage": "https://github.com/uttori/uttori-auth-provider-basic-auth",
+  "keywords": [
+    "auth",
+    "basic-auth"
+  ],
+  "engines": {
+    "node": ">= 8.11"
+  },
+  "dependencies": {
+    "basic-auth": "^2.0.1"
+  },
+  "devDependencies": {
+    "ava": "1.0.0-beta.8",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-ava": "^5.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-no-inferred-method-name": "^1.0.2",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-xss": "^0.1.9",
+    "nyc": "^13.0.1",
+    "sinon": "^6.3.5",
+    "supertest": "^3.3.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "uttori-auth-provider-basic-auth",
+  "nyc": {
+    "cache": true,
+    "all": true,
+    "check-coverage": true,
+    "include": [
+      "index.js"
+    ],
+    "exclude": []
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "report": "nyc report --reporter=html",
+    "test": "NODE_ENV=test nyc ava",
+    "validate": "npm ls"
+  }
+}
