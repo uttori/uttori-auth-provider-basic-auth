@@ -1,6 +1,6 @@
 {
   "name": "uttori-auth-provider-basic-auth",
-  "version": "1.0.2",
+  "version": "1.0.3-pre",
   "description": "Uttori auth provider using basic-auth.",
   "author": "Matthew Callis <matthew.callis@gmail.com>",
   "contributors": [],
