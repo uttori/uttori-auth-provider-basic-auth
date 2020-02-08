@@ -26,7 +26,7 @@ class AuthenticationProvider {
     if (this._config.authentication_mode === 'admin') {
       // if we are navigating not to an admin route then skip authcheck
       const action = req.url.substr(req.url.lastIndexOf('/') + 1);
-      if (this._config.routes.includes(action)) {
+      if (!this._config.routes.includes(action)) {
         return next();
       }
     }
